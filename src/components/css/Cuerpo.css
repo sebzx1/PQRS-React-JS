@@ -1,0 +1,156 @@
+
+.Cuerpo {
+  display: flex; 
+  justify-content: space-around; 
+  padding: 20px; 
+}
+
+
+.box1, .box2 {
+  flex: 1; 
+  max-width: 45%; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  border-radius: 8px; 
+  padding: 20px; 
+  background-color: #fff; 
+}
+
+
+.box .img {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.box .img img {
+  max-width: 100px; 
+  border-radius: 50%; 
+}
+
+.box .img h2 {
+  margin-top: 10px; 
+}
+
+
+.btn-funcionarios {
+  display: flex; 
+  gap: 10px; 
+  justify-content: center; 
+  margin-bottom: 40px;
+}
+
+.btn-funcionarios li{
+  list-style: none;
+}
+
+.btn-funcionarios a {
+  display: inline-block; 
+  padding: 10px 20px; 
+  border: 1px solid #007bff; 
+  border-radius: 5px; 
+  background-color: #007bff; 
+  color: white; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+  list-style: none;
+}
+
+.btn-funcionarios a:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+.form-group label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+.form-group input {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; 
+}
+
+/* Estilos generales para dispositivos móviles (incluye Android) */
+@media only screen and (max-width: 768px) {
+  .Cuerpo {
+    padding: 10px; 
+  }
+
+  .box1, .box2 {
+    margin: 0 auto; 
+    padding: 10px; 
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .img img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .btn-funcionarios {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0;
+    list-style: none; 
+  }
+
+  .btn-funcionarios li {
+    margin: 10px 0; 
+  }
+
+  form {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .form-group {
+    width: 100%; 
+    padding: 0 10px; 
+  }
+
+  .form-group label, .form-group input {
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .submit-btn {
+    width: 100%; 
+  }
+}
+
+
